@@ -1,26 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Travel Recommendation</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Travel Recommendation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e1e;
+            padding: 10px 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+        /* SEARCH BOX */
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        .search-box button {
+            margin-left: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+<!-- NAVIGATION BAR -->
+<div class="navbar">
 
-  <input type="text" id="searchInput" placeholder="Search">
-  <button onclick="searchPlaces()">Search</button>
-  <button onclick="clearResults()">Clear</button>
-</nav>
+    <!-- Left side links -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
 
-<h1>Welcome to Travel Recommendation</h1>
-<p>Find beautiful beaches, temples and countries to visit.</p>
+    <!-- Search box + buttons -->
+    <div class="search-box">
+        <input type="text" placeholder="Search destinations...">
+        <button type="button">Search</button>
+        <button type="button">Clear</button>
+    </div>
 
-<div id="results"></div>
+</div>
 
-<script src="script.js"></script>
+<!-- PAGE CONTENT -->
+<h1 style="text-align:center; margin-top:50px;">
+    Welcome to Travel Recommendation Website
+</h1>
+
 </body>
 </html>
