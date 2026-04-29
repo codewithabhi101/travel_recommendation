@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact Us</a>
-</nav>
+<h2>Contact Us</h2>
 
-<h1>Contact Us</h1>
+<p>Email: support@travelrecommendation.com</p>
 
-<form>
-  <input type="text" placeholder="Your Name"><br>
-  <input type="email" placeholder="Your Email"><br>
-  <textarea placeholder="Message"></textarea><br>
-  <button type="submit">Send</button>
+<!-- Contact Form -->
+<form action="mailto:support@travelrecommendation.com" method="post" enctype="text/plain">
+
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+
 </form>
 
 </body>
